@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Nav from './components/Nav'
 import OutputSection from './components/OutputSection'
 import PersonalDetailsInput from './components/PersonalDetailsInput'
+import SummaryInput from './components/SummaryInput'
 import './styles/output.css'
 import './styles/input.css'
 
@@ -15,9 +16,11 @@ function App() {
     portfolio: 'direct link',
     linkedin: 'direct link'
   })
-  
+  const [summary, setSummary] = useState ('Summary of you which includes your experience, specialization field highlighting your most relevant skills which emphasizes why you are fit for the role.')
+
   const sections = [
-    <PersonalDetailsInput personalDetails={personalDetails} setPersonalDetails={setPersonalDetails}/>
+    <PersonalDetailsInput personalDetails={personalDetails} setPersonalDetails={setPersonalDetails}/>,
+    <SummaryInput summary={summary} setSummary={setSummary}></SummaryInput>
   ]
   return (
     <div className='wrapper'>
@@ -27,7 +30,7 @@ function App() {
       >
       </Nav>
       {sections[currentSectionIndex]}
-      <OutputSection personalDetails={personalDetails}></OutputSection>
+      <OutputSection personalDetails={personalDetails} summary={summary}></OutputSection>
     </div>
   )
 }

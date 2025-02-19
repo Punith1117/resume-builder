@@ -1,4 +1,4 @@
-export default function OutputSection({personalDetails}) {
+export default function OutputSection({personalDetails, summary}) {
     return <section className="output" style={{backgroundColor: 'white'}}>
         <main className="a4-size">
             <div className="head">
@@ -11,6 +11,11 @@ export default function OutputSection({personalDetails}) {
                     <span><a href={personalDetails.linkedin}>Linkedin</a></span> |
                     <span><a href={personalDetails.portfolio}>Portfolio</a></span>
                 </section>
+            </div>
+            <div className="summary">
+                <h2>Summary:</h2>
+                <hr />
+                <p>{summary}</p>
             </div>
         </main>
     </section>
