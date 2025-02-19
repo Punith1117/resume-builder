@@ -75,16 +75,6 @@ nav {
   background-color: rgb(52, 156, 52);
 }
 
-.input {
+.input-section {
   width: 50vw;
-}
-
-.output {
-  width: 40vw;
-  color: black;
-  .a4-size {
-    width: 100%;
-    aspect-ratio: 210 / 297;  /* A4 paper ratio */
-    border: 1px solid black;
-  }
 }
