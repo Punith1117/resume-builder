@@ -35,7 +35,7 @@
     }
   }
 
-.summary {
+.summary, .skills {
     margin: 1rem;
     * {
         margin: 0;

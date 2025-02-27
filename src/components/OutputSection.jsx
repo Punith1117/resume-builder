@@ -1,4 +1,4 @@
-export default function OutputSection({personalDetails, summary}) {
+export default function OutputSection({personalDetails, summary, skills}) {
     return <section className="output" style={{backgroundColor: 'white'}}>
         <main className="a4-size">
             <div className="head">
@@ -16,6 +16,11 @@ export default function OutputSection({personalDetails, summary}) {
                 <h2>Summary:</h2>
                 <hr />
                 <p>{summary}</p>
+            </div>
+            <div className="skills">
+                <h2>Technical Skills</h2>
+                <hr />
+                <p>{skills}</p>
             </div>
         </main>
     </section>

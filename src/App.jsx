@@ -5,6 +5,7 @@ import PersonalDetailsInput from './components/PersonalDetailsInput'
 import SummaryInput from './components/SummaryInput'
 import './styles/output.css'
 import './styles/input.css'
+import SkillsInput from './components/SkillsInput'
 
 function App() {
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0)
@@ -17,10 +18,12 @@ function App() {
     linkedin: 'direct link'
   })
   const [summary, setSummary] = useState ('Summary of you which includes your experience, specialization field highlighting your most relevant skills which emphasizes why you are fit for the role.')
+  const [skills, setSkills] = useState('Java, React.js, Nodejs, HTML, CSS, Javascript, TypeScript, Tailwind css, Git, Github')
 
   const sections = [
     <PersonalDetailsInput personalDetails={personalDetails} setPersonalDetails={setPersonalDetails}/>,
-    <SummaryInput summary={summary} setSummary={setSummary}></SummaryInput>
+    <SummaryInput summary={summary} setSummary={setSummary}></SummaryInput>,
+    <SkillsInput skills={skills} setSkills={setSkills}></SkillsInput>
   ]
   return (
     <div className='wrapper'>
@@ -30,7 +33,7 @@ function App() {
       >
       </Nav>
       {sections[currentSectionIndex]}
-      <OutputSection personalDetails={personalDetails} summary={summary}></OutputSection>
+      <OutputSection personalDetails={personalDetails} summary={summary} skills={skills}></OutputSection>
     </div>
   )
 }

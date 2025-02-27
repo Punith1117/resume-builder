@@ -17,3 +17,11 @@
         height: 8rem;
     }
 }
+
+.input-skills {
+    textarea {
+        font-size: 1.2rem;
+        width: 30rem;
+        height: 8rem;
+    }
+}
