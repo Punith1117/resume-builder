@@ -7,6 +7,7 @@ import './styles/output.css'
 import './styles/input.css'
 import SkillsInput from './components/SkillsInput'
 import ExperienceInput from './components/ExperienceInput'
+import ProjectsInput from './components/ProjectsInput'
 
 function App() {
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0)
@@ -38,12 +39,36 @@ function App() {
       to: 'August 2025'
     }
   ])
+  const [projects, setProjects] = useState([
+    {
+      id: crypto.randomUUID(),
+      name: 'Battleship',
+      description: 'A game to attack enemy ships by selecting positions in enemy\'s base',
+      tech: 'HTML, CSS, Javascript',
+      live: 'https://punith1117.github.io/battleship/'
+    },
+    {
+      id: crypto.randomUUID(),
+      name: 'Lorem Ipsum',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, libero sunt amet mollitia fugiat repellat!',
+      tech: 'HTML, CSS, React, Javascript, TypeScript, Nodejs',
+      live: 'google.com'
+    },
+    {
+      id: crypto.randomUUID(),
+      name: 'Lorem Ipsum',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, libero sunt amet mollitia fugiat repellat!adipisicing elit. Deserunt',
+      tech: 'HTML, CSS, React, Javascript, TypeScript, Nodejs',
+      live: 'google.com'
+    }
+  ])
 
   const sections = [
     <PersonalDetailsInput personalDetails={personalDetails} setPersonalDetails={setPersonalDetails}/>,
     <SummaryInput summary={summary} setSummary={setSummary}></SummaryInput>,
     <SkillsInput skills={skills} setSkills={setSkills}></SkillsInput>,
-    <ExperienceInput experience={experience} setExperience={setExperience}></ExperienceInput>
+    <ExperienceInput experience={experience} setExperience={setExperience}></ExperienceInput>,
+    <ProjectsInput projects={projects} setProjects={setProjects}></ProjectsInput>
   ]
   return (
     <div className='wrapper'>
@@ -53,7 +78,7 @@ function App() {
       >
       </Nav>
       {sections[currentSectionIndex]}
-      <OutputSection personalDetails={personalDetails} summary={summary} skills={skills} experience={experience}></OutputSection>
+      <OutputSection personalDetails={personalDetails} summary={summary} skills={skills} experience={experience} projects={projects}></OutputSection>
     </div>
   )
 }

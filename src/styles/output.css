@@ -35,7 +35,7 @@
     }
   }
 
-.summary, .skills, .experience {
+.summary, .skills, .experience, .projects {
     margin: 1rem;
     * {
         margin: 0;

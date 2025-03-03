@@ -26,7 +26,7 @@
     }
 }
 
-.input-experience-item {
+.input-experience-item, .input-projects-item {
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -1,4 +1,4 @@
-export default function OutputSection({personalDetails, summary, skills, experience}) {
+export default function OutputSection({personalDetails, summary, skills, experience, projects}) {
     return <section className="output" style={{backgroundColor: 'white'}}>
         <main className="a4-size">
             <div className="head">
@@ -33,6 +33,17 @@ export default function OutputSection({personalDetails, summary, skills, experie
                         </div>
                         <h4 className="role">{element.role}</h4>
                         <p className="description">{element.description}</p>
+                    </div>
+                ))}
+            </div>
+            <div className="projects">
+                <h2>Projects</h2>
+                <hr />
+                {projects.map(element => (
+                    <div className="projects-item" key={element.id}>
+                        <h3 className="name">- {element.name} | <a href={element.live} target="blank">live</a></h3>
+                        <h4 className="description">{element.description}</h4>
+                        <p className="tech-used">{element.tech}</p>
                     </div>
                 ))}
             </div>
