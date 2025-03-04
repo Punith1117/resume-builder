@@ -108,6 +108,7 @@ function App() {
   ]
   return (
     <div className='wrapper'>
+      <header>Resume Builder by <a href="https://github.com/Punith1117">Punith1117</a></header>
       <Nav 
         currentSectionIndex={currentSectionIndex} 
         setCurrentSectionIndex={setCurrentSectionIndex}
