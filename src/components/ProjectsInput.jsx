@@ -1,6 +1,6 @@
 export default function ProjectsInput({projects, setProjects}) {
     return (
-        <section className="projects-input input-section">
+        <section className="input-projects input-section">
             <h1>Projects</h1>
             <button className="add-project" onClick={() =>
                 setProjects([

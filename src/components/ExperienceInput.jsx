@@ -1,6 +1,6 @@
 export default function ExperienceInput({experience, setExperience}) {
     return (
-        <section className="Experience-input input-section">
+        <section className="input-experience input-section">
             <h1>Experience</h1>
             <button className="add-experience" onClick={() => setExperience([...experience, {
                 id: crypto.randomUUID(),

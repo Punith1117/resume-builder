@@ -1,6 +1,6 @@
 export default function EducationInput({education, setEducation}) {
     return (
-        <section className="education-input input-section">
+        <section className="input-education input-section">
             <h1>Education</h1>
             <button className="add-education" onClick={() => setEducation([...education, {
                 course: '10th Grade',

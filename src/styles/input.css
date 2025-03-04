@@ -1,4 +1,4 @@
-.input-summary, .input-skills, .input-personal-details, .Experience-input, .projects-input, .education-input {
+.input-summary, .input-skills, .input-personal-details, .input-experience, .input-projects, .input-education {
     display: flex;
     flex-direction: column;
     align-items: center;
