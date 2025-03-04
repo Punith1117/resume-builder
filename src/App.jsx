@@ -8,6 +8,7 @@ import './styles/input.css'
 import SkillsInput from './components/SkillsInput'
 import ExperienceInput from './components/ExperienceInput'
 import ProjectsInput from './components/ProjectsInput'
+import EducationInput from './components/EducationInput'
 
 function App() {
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0)
@@ -62,13 +63,40 @@ function App() {
       live: 'google.com'
     }
   ])
+  const [education, setEducation] = useState([
+    {
+      id: crypto.randomUUID(),
+      course: 'B.E in Computer Science',
+      grade: 'x.x',
+      year: 'expected 2332',
+      institutionName: 'Ramaiah Institute of Technology',
+      location: 'Bengaluru, Karnataka'
+    },
+    {
+      id: crypto.randomUUID(),
+      course: '12th Grade',
+      grade: 'xx%',
+      year: '2342',
+      institutionName: 'Vidya Mandir PU college',
+      location: 'Bengaluru, Karnataka'
+    },
+    {
+      id: crypto.randomUUID(),
+      course: '10th Grade',
+      grade: 'xx%',
+      year: '2355',
+      institutionName: 'St Marys\'s Public School',
+      location: 'Bengaluru, Karnataka'
+    }
+  ])
 
   const sections = [
     <PersonalDetailsInput personalDetails={personalDetails} setPersonalDetails={setPersonalDetails}/>,
     <SummaryInput summary={summary} setSummary={setSummary}></SummaryInput>,
     <SkillsInput skills={skills} setSkills={setSkills}></SkillsInput>,
     <ExperienceInput experience={experience} setExperience={setExperience}></ExperienceInput>,
-    <ProjectsInput projects={projects} setProjects={setProjects}></ProjectsInput>
+    <ProjectsInput projects={projects} setProjects={setProjects}></ProjectsInput>,
+    <EducationInput education={education} setEducation={setEducation}></EducationInput>
   ]
   return (
     <div className='wrapper'>
@@ -78,7 +106,7 @@ function App() {
       >
       </Nav>
       {sections[currentSectionIndex]}
-      <OutputSection personalDetails={personalDetails} summary={summary} skills={skills} experience={experience} projects={projects}></OutputSection>
+      <OutputSection personalDetails={personalDetails} summary={summary} skills={skills} experience={experience} projects={projects} education={education}></OutputSection>
     </div>
   )
 }

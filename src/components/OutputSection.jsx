@@ -1,5 +1,6 @@
-export default function OutputSection({personalDetails, summary, skills, experience, projects}) {
+export default function OutputSection({personalDetails, summary, skills, experience, projects, education}) {
     return <section className="output" style={{backgroundColor: 'white'}}>
+        <button onClick={window.print} style={{position: 'absolute'}}>Print</button>
         <main className="a4-size">
             <div className="head">
 
@@ -44,6 +45,19 @@ export default function OutputSection({personalDetails, summary, skills, experie
                         <h3 className="name">- {element.name} | <a href={element.live} target="blank">live</a></h3>
                         <h4 className="description">{element.description}</h4>
                         <p className="tech-used">{element.tech}</p>
+                    </div>
+                ))}
+            </div>
+            <div className="education">
+                <h2>Education</h2>
+                <hr />
+                {education.map(element => (
+                    <div className="education-item" key={element.id}>
+                        <div className="main-details-wrapper">
+                            <h3 className="course-grade">{element.course} | {element.grade}</h3>
+                            <p className="year">{element.year}</p>
+                        </div>
+                        <p>{element.institutionName} | {element.location}</p>
                     </div>
                 ))}
             </div>

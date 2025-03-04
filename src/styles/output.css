@@ -35,7 +35,7 @@
     }
   }
 
-.summary, .skills, .experience, .projects {
+.summary, .skills, .experience, .projects, .education {
     margin: 1rem;
     * {
         margin: 0;
@@ -60,5 +60,30 @@
     align-items: center;
     .time-period {
         margin-left: auto;
+    }
+}
+
+.education {
+    .main-details-wrapper {
+        display: flex;
+
+        .year {
+            margin-left: auto;
+        }
+    }
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    main {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+    main * {
+        visibility: visible;
     }
 }
