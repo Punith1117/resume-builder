@@ -46,6 +46,7 @@ export default function PersonalDetailsInput({personalDetails, setPersonalDetail
                         })}
                         
                         value={personalDetails.email}
+                        style={{width: '29rem'}}
                     />
                 </label>
                 <label>
