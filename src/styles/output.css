@@ -77,18 +77,14 @@
 }
 
 @media print {
-    body * {
-        visibility: hidden;
-    }
     .a4-size {
-        visibility: visible;
         position: absolute;
         left: 0;
         top: 0;
         width: 100%;
-        font-size: 0.85rem;
+        font-size: 1.2rem;
     }
-    .a4-size * {
-        visibility: visible;
+    header, nav, .input-section *, .output button{
+        display: none;
     }
 }
