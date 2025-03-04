@@ -14,13 +14,14 @@
   
 .a4-size {
     color: black;
+    font-size: 1vw;
     h1 {
-        font-size: 1.5rem;
-        margin-top: 1rem;
-        margin-bottom: 5px;
+        font-size: 1.3em;
+        margin-top: 0.4em;
+        margin-bottom: 0.1em;
     }
     section {
-        font-size: 0.9rem;
+        font-size: 0.8em;
         display: flex;
         span {
             margin-left: 3px;
@@ -36,21 +37,21 @@
   }
 
 .summary, .skills, .experience, .projects, .education {
-    margin: 1rem;
+    margin: 0.8em;
     * {
         margin: 0;
     }
     h2 {
-        font-size: 1.2rem;
+        font-size: 1em;
     }
     h3 {
-        font-size: 1rem;
+        font-size: 0.9em;
     }
     h4 {
-        font-size: 0.9rem;
+        font-size: 0.8em;
     }
     p {
-        font-size: 14px;
+        font-size: 0.7em;
     }
 }
 
