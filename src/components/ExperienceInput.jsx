@@ -24,7 +24,7 @@ export default function ExperienceInput({experience, setExperience}) {
                         </label>
                         <label>
                             Description:
-                            <textarea value={element.description} onChange={e => setExperience(experience.map(item => ((item.id == element.id) ? {...item, description: e.target.value} : item)))}></textarea>
+                            <textarea value={element.description} onChange={e => setExperience(experience.map(item => ((item.id == element.id) ? {...item, description: e.target.value} : item)))} style={{width: '35vw', height: '10vh'}}></textarea>
                         </label>
                         <label>
                             From:
