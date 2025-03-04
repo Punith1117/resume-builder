@@ -78,13 +78,15 @@
     body * {
         visibility: hidden;
     }
-    main {
+    .a4-size {
+        visibility: visible;
         position: absolute;
         left: 0;
         top: 0;
         width: 100%;
+        font-size: 0.85rem;
     }
-    main * {
+    .a4-size * {
         visibility: visible;
     }
 }
