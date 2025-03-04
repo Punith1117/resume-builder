@@ -38,6 +38,14 @@ function App() {
       description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum dignissimos explicabo fugit dolorum voluptatibus aperiam',
       from: 'June 2025',
       to: 'August 2025'
+    },
+    {
+      id: crypto.randomUUID(),
+      role: 'App Developer',
+      companyName: 'XYZ company',
+      description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum dignissimos explicabo fugit dolorum voluptatibus aperiam',
+      from: 'June 2025',
+      to: 'August 2025'
     }
   ])
   const [projects, setProjects] = useState([
