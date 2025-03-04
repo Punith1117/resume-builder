@@ -1,8 +1,49 @@
-# React + Vite
+# Project15 in The Odin Project - Resume Builder 📝
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React-based Resume Builder where users can create and customize their resumes dynamically. This is my first React project, where I learned fundamental React concepts such as JSX, state management, the useState hook, handling keys in lists, and working with Vite for fast development.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Create and edit resume details dynamically
+
+- Live preview of resume updates
+
+- Downloadable resume
+
+
+## Technologies Used
+
+- React (JSX, State, Hooks)
+
+- Vite (Fast development environment)
+
+- CSS (For styling)
+
+## What I Learned
+
+- Writing JSX and structuring React components
+
+- Managing state using useState hook
+
+- Handling dynamic lists with unique keys
+
+- Setting up and running a React project using Vite
+
+- Using Netlify to deploy the project
+
+## Usage
+
+- Fill in your resume details using the input fields
+
+- Preview updates in real time
+
+- Modify sections as needed
+
+- Print the output as a pdf
+
+## Future Enhancements
+
+- Improve UI with animations and better design
+
+- Add responsive design for mobile users
+
