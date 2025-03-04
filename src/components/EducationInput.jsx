@@ -26,7 +26,7 @@ export default function EducationInput({education, setEducation}) {
                     </label>
                     <label>
                         Institution Name: 
-                        <input type="text" value={element.institutionName} onChange={e => setEducation(education.map(item => (item.id == element.id) ? {...item, institutionName: e.target.value} : item))}/>
+                        <input type="text" value={element.institutionName} onChange={e => setEducation(education.map(item => (item.id == element.id) ? {...item, institutionName: e.target.value} : item))} style={{width: '30vw'}}/>
                     </label>
                     <label>
                         Location: 
