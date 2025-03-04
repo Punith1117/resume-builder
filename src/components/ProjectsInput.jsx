@@ -24,15 +24,15 @@ export default function ProjectsInput({projects, setProjects}) {
                         </label>
                         <label>
                             Description:
-                            <textarea value={element.description} onChange={e => setProjects(projects.map(item => ((item.id == element.id) ? {...item, description: e.target.value} : item)))}/>
+                            <textarea value={element.description} onChange={e => setProjects(projects.map(item => ((item.id == element.id) ? {...item, description: e.target.value} : item)))} style={{width: '35vw'}}/>
                         </label>
                         <label>
                             Tech Used:
-                            <textarea value={element.tech} onChange={e => setProjects(projects.map(item => ((item.id == element.id) ? {...item, tech: e.target.value} : item)))}/>
+                            <textarea value={element.tech} onChange={e => setProjects(projects.map(item => ((item.id == element.id) ? {...item, tech: e.target.value} : item)))} style={{width: '30vw'}}/>
                         </label>
                         <label>
                             Live link:
-                            <input type="text" value={element.live} onChange={e => setProjects(projects.map(item => ((item.id == element.id) ? {...item, live: e.target.value} : item)))}/>
+                            <input type="text" value={element.live} onChange={e => setProjects(projects.map(item => ((item.id == element.id) ? {...item, live: e.target.value} : item)))} style={{width: '20rem'}}/>
                         </label>
                         <button onClick={() => setProjects(projects.filter(item => item.id != element.id))}>delete</button>
                     </div>
