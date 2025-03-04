@@ -24,11 +24,11 @@ export default function ProjectsInput({projects, setProjects}) {
                         </label>
                         <label>
                             Description:
-                            <textarea value={element.description} onChange={e => setProjects(projects.map(item => ((item.id == element.id) ? {...item, description: e.target.value} : item)))} style={{width: '35vw'}}/>
+                            <textarea value={element.description} onChange={e => setProjects(projects.map(item => ((item.id == element.id) ? {...item, description: e.target.value} : item)))} style={{width: '35vw', height: '5rem'}}/>
                         </label>
                         <label>
                             Tech Used:
-                            <textarea value={element.tech} onChange={e => setProjects(projects.map(item => ((item.id == element.id) ? {...item, tech: e.target.value} : item)))} style={{width: '30vw'}}/>
+                            <textarea value={element.tech} onChange={e => setProjects(projects.map(item => ((item.id == element.id) ? {...item, tech: e.target.value} : item)))} style={{width: '25vw', height: '3rem'}}/>
                         </label>
                         <label>
                             Live link:
