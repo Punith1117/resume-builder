@@ -2,6 +2,8 @@
 
 A simple React-based Resume Builder where users can create and customize their resumes dynamically. This is my first React project, where I learned fundamental React concepts such as JSX, state management, the useState hook, handling keys in lists, and working with Vite for fast development.
 
+## [Try It Live](https://resume-builder-punith1117.netlify.app/)
+
 ## Features
 
 - Create and edit resume details dynamically
